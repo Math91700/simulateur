@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulateur de Crédit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Simulateur de Crédit Interactif</h1>
+        <div class="form-group">
+            <label>Montant du prêt (€): <span id="principalValue">10000</span></label>
+            <input type="range" id="principal" min="1000" max="100000" step="500" value="10000">
+        </div>
+        <div class="form-group">
+            <label>Taux d'intérêt (%): <span id="rateValue">5</span></label>
+            <input type="range" id="rate" min="0.5" max="15" step="0.1" value="5">
+        </div>
+        <div class="form-group">
+            <label>Durée (années): <span id="yearsValue">5</span></label>
+            <input type="range" id="years" min="1" max="30" step="1" value="5">
+        </div>
+        <button onclick="calculateCredit()">📊 Calculer</button>
+        <div id="result"></div>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>
